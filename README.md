@@ -3,6 +3,7 @@ Face Registration System
 
 
 Overview
+
 The Face Registration System is a web application designed to capture and store facial images along with user details for identification purposes. Users can capture a photo using their webcam, input their name, and have the data (name, date, day, and image data) stored in a MongoDB database. The frontend is built with React, leveraging react-webcam for image capture, framer-motion for animations, and react-icons for UI elements. The backend uses Node.js with Express and MongoDB for data persistence. The application features a modern, responsive UI styled with Tailwind CSS.
 Features
 
