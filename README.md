@@ -37,14 +37,14 @@ MongoDB (running locally on mongodb://localhost:27017)
 npm (Node Package Manager)
 A modern web browser (e.g., Chrome, Firefox, Edge)
 
-Installation
+Installation:
 
 Clone the Repository
 git clone https://github.com/your-username/face-registration-system.git
 cd face-registration-system
 
 
-Backend Setup
+Backend Setup:
 
 Navigate to the backend directory:cd backend
 
@@ -58,7 +58,7 @@ Start the backend server:node server.js
 The server will run on http://localhost:5000.
 
 
-Frontend Setup
+Frontend Setup:
 
 Navigate to the frontend directory:cd frontend
 
@@ -79,14 +79,14 @@ Start the frontend development server (e.g., using Vite):npm start
 The frontend will typically run on http://localhost:3000.
 
 
-MongoDB Configuration
+MongoDB Configuration:
 
 Ensure MongoDB is running locally or update the connection string in backend/server.js for a remote instance.
 The application uses a database named face-recognition with a collection called registrations.
 
 
 
-Usage
+Usage:
 
 Open the application in your browser (e.g., http://localhost:3000).
 Allow webcam access when prompted.
@@ -109,7 +109,7 @@ face-registration-system/
 ├── README.md               # This file
 └── package.json            # Backend dependencies and scripts
 
-Styling
+Styling:
 The application uses Tailwind CSS via CDN. Custom classes are defined as follows (add to frontend/public/styles.css or a Tailwind config script):
 .glass-card {
   @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-lg shadow-lg;
@@ -127,7 +127,7 @@ The application uses Tailwind CSS via CDN. Custom classes are defined as follows
   @apply bg-white/10 border border-white/20 rounded-md px-4 py-2 text-white focus:outline-none focus:ring-2 focus:ring-blue-500;
 }
 
-Notes on Image Embedding
+Notes on Image Embedding:
 
 The current implementation stores the captured image as a base64 string in the imageEmbedding field in MongoDB.
 For actual facial recognition, integrate a library like face-api.js or a machine learning model (e.g., FaceNet) to convert the image to a numerical embedding.
@@ -147,20 +147,13 @@ await faceapi.nets.faceRecognitionNet.loadFromDisk('path/to/models');
 const image = faceapi.bufferToImage(Buffer.from(imageBase64, 'base64'));
 const embeddings = await faceapi.computeFaceDescriptor(image);
 
-Troubleshooting
+Troubleshooting:
 
 MongoDB Connection Issues: Ensure MongoDB is running and the connection string in server.js is correct.
 Webcam Access Denied: Verify browser permissions for camera access.
 CORS Errors: Confirm the backend server is running on http://localhost:5000 and CORS is enabled.
 Missing Dependencies: Run npm install in both frontend and backend directories.
 
-Contributing
-Contributions are welcome! To contribute:
 
-Fork the repository.
-Create a new branch (git checkout -b feature/your-feature).
-Make your changes and commit (git commit -m "Add your feature").
-Push to the branch (git push origin feature/your-feature).
-Open a pull request on GitHub.
 
 This project is a part of a hackathon run by https://katomaran.com
