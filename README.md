@@ -187,9 +187,6 @@ const embeddings = await faceapi.computeFaceDescriptor(image);
 📦 **Missing Dependencies**: Run `npm install` in both frontend and backend directories.  
 
 ---
-# output 
-![image](https://github.com/user-attachments/assets/5c39e50a-eede-40cd-b160-e486405c0fc3)
-
 # simillarity check 
 
 ![image](https://github.com/user-attachments/assets/8c1c5a58-0c68-4555-abda-3a0def266b26)
